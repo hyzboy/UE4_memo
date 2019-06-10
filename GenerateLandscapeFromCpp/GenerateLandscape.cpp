@@ -5,6 +5,7 @@
 #include "EngineUtils.h"
 #include "Landscape.h"
 #include "LandscapeInfo.h"
+#include "LandscapeEditorUtils.h"
 
 TArray<uint16> heightmap_expand(TArray<uint16> Data, int width, int height, int new_width, int new_height) {
 	uint16 *original_data_buf = Data.GetData();
