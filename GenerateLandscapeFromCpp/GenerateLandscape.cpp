@@ -27,12 +27,12 @@ bool UBPFL_GenerateLandscape::GenerateLandscape(const UObject* worldContextObjec
 	FRotator rotator(0.0f, 0.0f, 0.0f);
 
 	ALandscape* landscape = world->SpawnActor<ALandscape>(location, rotator, params);
-
+	ALandscapeProxy* proxy = Cast<ALandscapeProxy>(landscape);
+	
 	int section_size = 63;
 	int section_per_component = 1;
 	int component_x = 8;
 	int component_y = 8;
-	ALandscapeProxy* proxy = Cast<ALandscapeProxy>(landscape);
 	int quads_per_component = section_per_component * section_size;
 	int size_x = component_x * quads_per_component + 1;
 	int size_y = component_y * quads_per_component + 1;
