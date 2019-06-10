@@ -62,6 +62,7 @@ bool UBPFL_GenerateLandscape::GenerateLandscape(const UObject* worldContextObjec
 			heightmap[y + x * size_y] = x * y;
 		}
 	}
+	// TArray<uint16> Data = heightmap_expand(heightmap, width, height, section_size * section_per_component * component_y + 1, section_size * section_per_component * component_x + 1);
 	TArray<FLandscapeImportLayerInfo> infos;
 	proxy->Import(FGuid::NewGuid(), 0, 0, size_x - 1, size_y - 1, section_per_component, section_size, heightmap.GetData(), nullptr, infos, ELandscapeImportAlphamapType::Additive);
 	return true;
