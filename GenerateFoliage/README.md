@@ -1,4 +1,4 @@
-If you use this, change your project name "lol2" in BPFL_GenerateFoliage.h
+If you use this, change your project name "MYPROJECT2" in BPFL_GenerateFoliage.h
 
 note: Need to exists foliage object in your world. if not exists foliage, your project is crushed.
 
