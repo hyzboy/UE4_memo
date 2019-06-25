@@ -13,6 +13,7 @@ Open Visual Studio, and VScmd from menu tool.<br>
 
 Please enter the following <br>
 `"C:\Program Files (x86)\Microsoft Visual Studio 17.0\VC\bin\lib.exe" /DEF:sqlite3.def /MACHINE:x86 /OUT:sqlite3.lib`
+![3](https://github.com/pto8913/UE4_memo/blob/images/sqlite_detail_3.png)
 
 # Finally
 Add the obtained file to your project.<br>
