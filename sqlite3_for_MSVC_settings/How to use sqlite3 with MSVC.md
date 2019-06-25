@@ -4,16 +4,15 @@ Microsoft Visual Studio 2017 community
 
 # First
 Get `sqlite-amalgamation-XXXXXXX.zip` and `sqlite-dll-win32-x86-XXXXXXX.zip` from [here](https://www.sqlite.org/download.html)<br>
-
-![1](https://github.com/pto8913/UE4_memo/blob/images/sqlite_detail_1.png)<br>
+![1](https://github.com/pto8913/UE4_memo/blob/images/sqlite/sqlite_detail_1.png)<br>
 
 # Second
 Open Visual Studio, and VScmd from menu tool.<br>
-![2](https://github.com/pto8913/UE4_memo/blob/images/sqlite_detail_2.png)<br>
+![2](https://github.com/pto8913/UE4_memo/blob/images/sqlite/sqlite_detail_2.png)<br>
 
 Please enter the following <br>
 `"C:\Program Files (x86)\Microsoft Visual Studio 17.0\VC\bin\lib.exe" /DEF:sqlite3.def /MACHINE:x86 /OUT:sqlite3.lib`
-![3](https://github.com/pto8913/UE4_memo/blob/images/sqlite_detail_3.png)
+![3](https://github.com/pto8913/UE4_memo/blob/images/sqlite/sqlite_detail_3.png)
 
 # Finally
 Add the obtained file to your project.<br>
