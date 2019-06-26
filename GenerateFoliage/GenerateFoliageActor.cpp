@@ -35,9 +35,7 @@ void AMyLevelScriptActor::BeginPlay(){
 		meshComponent->RegisterComponent();
 	}
 
-
-
-	//Now you just need to add instances to component, this example crate 2500 instances
+	//Now you just need to add instances to component, this example crate 25 instances
 	FTransform transform = FTransform();
 	for (int32 x = 0; x < 5; x++)
 	{
