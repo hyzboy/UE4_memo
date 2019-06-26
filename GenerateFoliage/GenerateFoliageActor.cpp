@@ -6,6 +6,7 @@
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 
 AMyLevelScriptActor::AMyLevelScriptActor(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer){
+	// You can use your assets by changing in TEXT
 	static ConstructorHelpers::FObjectFinder <UStaticMesh> MyMeshObj(TEXT("/Game/ScotsPine_01/ScotsPine_01.ScotsPine_01"));
 	MyStaticMesh = MyMeshObj.Object;
 }
