@@ -38,11 +38,13 @@ void AMyLevelScriptActor::BeginPlay(){
 
 	//Now you just need to add instances to component, this example crate 2500 instances
 	FTransform transform = FTransform();
-	for (int32 x = 0; x < 50; x++)
+	for (int32 x = 0; x < 5; x++)
 	{
-		for (int32 y = 0; y < 50; y++)
+		for (int32 y = 0; y < 5; y++)
 		{
 			transform.SetLocation(FVector(1000.f * x, 1000.f * y, 0.f));
+			// You can change foliage scale 
+			// transform.SetScale3D(FVector(0.5f, 0.5f, 0.5f));
 			meshComponent->AddInstance(transform);
 		}
 	}
