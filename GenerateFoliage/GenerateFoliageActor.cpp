@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// write by pto8913
 
 #include "MyLevelScriptActor.h"
 #include "EngineUtils.h"
