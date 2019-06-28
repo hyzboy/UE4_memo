@@ -1,4 +1,4 @@
-// write by pto8913
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -7,13 +7,13 @@
 #include "MyLevelScriptActor.generated.h"
 
 UCLASS()
-class LOL_API GenerateFoliageActor : public AActor
+class LOL_API AMyLevelScriptActor : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
 	// Sets default values for this actor's properties
-	AGenerateFoliageActor(const FObjectInitializer& ObjectInitializer);
+	AMyLevelScriptActor(const FObjectInitializer& ObjectInitializer);
 
 
 	virtual void BeginPlay() override;
