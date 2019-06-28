@@ -1,17 +1,17 @@
 // write by pto8913
 
-#include "MyLevelScriptActor.h"
+#include "GenerateFoliageActor.h"
 #include "EngineUtils.h"
 #include "Runtime/Foliage/Public/InstancedFoliageActor.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 
-AMyLevelScriptActor::AMyLevelScriptActor(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer){
+AGenerateFoliageActor::AGenerateFoliageActor(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer){
 	// You can use your assets by changing in TEXT
 	static ConstructorHelpers::FObjectFinder <UStaticMesh> MyMeshObj(TEXT("/Game/ScotsPine_01/ScotsPine_01.ScotsPine_01"));
 	MyStaticMesh = MyMeshObj.Object;
 }
 
-void AMyLevelScriptActor::BeginPlay(){
+void AGenerateFoliageActor::BeginPlay(){
 	Super::BeginPlay();
 
 	TActorIterator<AInstancedFoliageActor> foliageIterator(GetWorld());
