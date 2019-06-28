@@ -7,7 +7,7 @@
 #include "MyLevelScriptActor.generated.h"
 
 UCLASS()
-class LOL_API AMyLevelScriptActor : public AActor
+class LOL_API GenerateFoliageActor : public AActor
 {
 	GENERATED_BODY()
 	
