@@ -41,8 +41,7 @@ void AMyLevelScriptActor::BeginPlay() {
 		for (int32 y = 0; y < 5; y++)
 		{
 			transform.SetLocation(FVector(1000.f * x, 1000.f * y, 0.f));
-			// You can change scale
-			// transform.SetScale3D(FVector(0.5f, 0.5f, 0.5f));
+			transform.SetScale3D(FVector(0.5f, 0.5f, 0.5f));
 			meshComponent->AddInstance(transform);
 		}
 	}
