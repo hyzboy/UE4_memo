@@ -13,7 +13,7 @@ class LOL_API GenerateFoliageActor : public AActor
 	
 public:	
 	// Sets default values for this actor's properties
-	AMyLevelScriptActor(const FObjectInitializer& ObjectInitializer);
+	GenerateFoliageActor(const FObjectInitializer& ObjectInitializer);
 
 
 	virtual void BeginPlay() override;
