@@ -1,17 +1,16 @@
-// write by pto8913
+// write by pto
 
-#include "GenerateFoliageActor.h"
+#include "MyLevelScriptActor.h"
 #include "EngineUtils.h"
 #include "Runtime/Foliage/Public/InstancedFoliageActor.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 
-AGenerateFoliageActor::AGenerateFoliageActor(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer){
-	// You can use your assets by changing in TEXT
-	static ConstructorHelpers::FObjectFinder <UStaticMesh> MyMeshObj(TEXT("/Game/ScotsPine_01/ScotsPine_01.ScotsPine_01"));
+AMyLevelScriptActor::AMyLevelScriptActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+	static ConstructorHelpers::FObjectFinder <UStaticMesh> MyMeshObj(TEXT("/Game/KiteDemo/Environments/Trees/ScotsPine_01/ScotsPine_01.ScotsPine_01"));
 	MyStaticMesh = MyMeshObj.Object;
 }
 
-void AGenerateFoliageActor::BeginPlay(){
+void AMyLevelScriptActor::BeginPlay() {
 	Super::BeginPlay();
 
 	TActorIterator<AInstancedFoliageActor> foliageIterator(GetWorld());
@@ -42,7 +41,7 @@ void AGenerateFoliageActor::BeginPlay(){
 		for (int32 y = 0; y < 5; y++)
 		{
 			transform.SetLocation(FVector(1000.f * x, 1000.f * y, 0.f));
-			// You can change foliage scale 
+			// You can change scale
 			// transform.SetScale3D(FVector(0.5f, 0.5f, 0.5f));
 			meshComponent->AddInstance(transform);
 		}
