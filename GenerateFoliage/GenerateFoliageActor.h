@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MyLevelScriptActor.generated.h"
+#include "GenerateFoliageActor.generated.h"
 
 UCLASS()
-class MYPROJECT2_API AMyLevelScriptActor : public AActor
+class MYPROJECT2_API AGenerateFoliageActor : public AActor
 {
 	GENERATED_BODY()
 	
