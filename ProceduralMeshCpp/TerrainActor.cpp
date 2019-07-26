@@ -14,7 +14,7 @@ ATerrainActor::ATerrainActor(const FObjectInitializer& ObjectInitializer) : Supe
 	mesh = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh"));
 	RootComponent = mesh;
 
-  mesh->bUseAsyncCooking = true;
+  	mesh->bUseAsyncCooking = true;
 }
 
 void ATerrainActor::PostActorCreated()
