@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// write by pto8913
 #include "TerrainActor.h"
 #include "EngineUtils.h"
 #include "Runtime/Foliage/Public/InstancedFoliageActor.h"
@@ -75,7 +74,6 @@ void ATerrainActor::BeginPlay() {
 	Super::BeginPlay();
 }
 
-// Called every frame
 void ATerrainActor::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
 }
