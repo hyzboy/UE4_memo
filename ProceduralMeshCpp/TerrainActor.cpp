@@ -30,7 +30,7 @@ void ATerrainActor::PostLoad()
 }
 
 void ATerrainActor::CreateTriangle() {
-  std::random_device rnd;
+  	std::random_device rnd;
 	std::mt19937 mt(rnd());
 	std::uniform_int_distribution<> Zrand(0, RowZ);
 
