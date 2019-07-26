@@ -18,10 +18,10 @@ public:
 	ATerrainActor(const FObjectInitializer& ObjectInitializer);
 
 	UPROPERTY(EditAnywhere)
-		int RowX;
+		int RowX = 10;
 
 	UPROPERTY(EditAnywhere)
-		int RowY;
+		int RowY = 10;
 
 	void CreateTriangle();
 
