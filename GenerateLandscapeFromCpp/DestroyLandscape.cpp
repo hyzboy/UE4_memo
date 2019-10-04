@@ -1,4 +1,6 @@
 // write by pto8913
+// 古いものから順番に消されるので注意して下さい。
+// note : that the oldest ones will be deleted in order.
 
 #include "DestroyLandscape.h"
 
