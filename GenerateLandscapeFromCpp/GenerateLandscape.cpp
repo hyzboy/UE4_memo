@@ -12,7 +12,6 @@ bool UBPFL_GenerateLandscape::GenerateLandscape(const UObject* worldContextObjec
 	FActorSpawnParameters params;
 
 	params.bDeferConstruction = false;
-	params.ObjectFlags = EObjectFlags::RF_NoFlags;
 	params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
 	UWorld* world = worldContextObject_->GetWorld();
